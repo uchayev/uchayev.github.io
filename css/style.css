@@ -1,0 +1,193 @@
+/* Flexbox testing */
+#flexdiv1 {
+  display: flex;
+  justify-content: space-around;
+  background: #000;
+  display: none;
+}
+#flexdiv2 {
+  display: flex;
+  justify-content: space-evenly;
+  background: #000;
+  display: none;
+}
+.square {
+  min-width: 50px;
+  min-height: 50px;
+  background: #a7f;
+  border: 1px solid red;
+}
+/* Flexbox testing end */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f7fa;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
+#main {
+  background-color: #ffffff;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+}
+
+/* ASIDE sidebar */
+aside {
+  background-color: #1e2939;
+  width: 370px;
+  order: -1;
+  padding: 40px 0;
+}
+aside > div {
+  margin: 54px 40px;
+  /* outline: 1px dashed red; */
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+}
+aside > div > h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+aside > div > div {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+}
+aside > div > div > a {
+  color: #fff;
+  font-weight: 400;
+  margin-left: 10px;
+  opacity: 0.5;
+  text-align: right;
+}
+aside > div > ul > li {
+  list-style: none inside;
+}
+aside > div > ul > li::before {
+  content: '●';
+  margin-right: 8px;
+  color: #ff6b08;
+}
+/* ASIDE sidebar end */
+
+.content {
+  padding: 100px 90px 0;
+}
+.content ol,
+.content ul {
+  list-style: inside;
+}
+.content ol {
+  list-style-type: decimal;
+  font-weight: 700;
+}
+.content ol li {
+  width: 430px;
+  border-bottom: 1px dotted #a8a8a8;
+}
+#aboutme_main h2 {
+  font-weight: 700;
+}
+#aboutme_main h1 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 89px;
+  /* text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15); */
+}
+#aboutme_main p {
+  color: #595959;
+  margin-bottom: 60px;
+}
+#projects,
+#workexperience,
+#education {
+  margin: 55px 0;
+}
+#projects h3,
+#workexperience h3,
+#education h3 {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin: 18px 0;
+}
+
+#projects a {
+  color: #595959;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+}
+#workexperience h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.48px;
+  margin: 14px 0;
+}
+#workexperience div h4 > span {
+  color: #ff6b08;
+  font-size: 16px;
+  font-weight: 700;
+}
+#workexperience div span,
+#education span {
+  color: #a8a8a8;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.36px;
+}
+#workexperience div span b {
+  color: #000;
+}
+#workexperience div {
+  margin: 25px 0;
+}
+#workexperience div li {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+#education {
+  color: #000;
+}
+#education h3 {
+  color: #000;
+}
+#education .university {
+  color: #ff6b08;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.48px;
+}
+#education .facultet {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+#education span b {
+  color: #000;
+}
